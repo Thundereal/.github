@@ -1,21 +1,32 @@
-# Thundereal
+<p align="center">
+  <a href="https://thundereal.org"><img src="thundereal-mark.svg" width="88" height="88" alt="Thundereal"></a>
+</p>
 
-**Thundereal CAD** — parametric CAD for desktop, browser and mobile, from one codebase.
+<h1 align="center">Thundereal</h1>
 
-This organization is the future home of the project currently developed at
-[realthunder/FreeCAD](https://github.com/realthunder/FreeCAD) — the fork known for
-pioneering `App::Link` and the topological-naming fix, now grown into its own product
-direction:
+<p align="center"><b>Parametric 3D CAD. Everything you dreamed of. And then some.</b></p>
 
-- **One codebase, every screen** — the full modeler on desktop, a streaming WASM viewer
-  in any browser or phone.
-- **A modern renderer** — bgfx-based, choosing Vulkan / Metal / OpenGL / WebGL at runtime.
-- **Built for large models** — instanced rendering, streamed scenes, progressive import.
-- **Share a model like a link** — serve a live, view-tolerance scene straight from your
-  session; the parametric model never leaves your machine.
+<p align="center">
+  <a href="https://thundereal.org">Website</a> &middot;
+  <a href="https://github.com/Thundereal/ThunderealCAD">Source</a> &middot;
+  <a href="https://github.com/Thundereal/ThunderealCAD/discussions">Discussions</a> &middot;
+  <a href="https://github.com/Thundereal/ThunderealCAD/issues">Report a bug</a>
+</p>
 
-Thundereal is free, open-source software (LGPL), based on
-[FreeCAD](https://www.freecad.org). It is an independent project — please report issues
-here, not to the upstream FreeCAD tracker.
+Thundereal is FreeCAD rebuilt where it counts:
 
-Stewarded by Thundereal Technologies Pte. Ltd. · [thundereal.com](https://thundereal.com)
+- **A live renderer** -- physically based materials, shadows, glass and
+  water, surface finishes with threads that look cut, MaterialX and Blender's
+  Cycles, all in the window you model in, live while you edit.
+- **A kernel that finishes the job** -- its own fork of OpenCASCADE, fixing
+  the thickness, fillet and draft cases that fail upstream.
+- **A model with a memory** -- every step kept in the document's transaction
+  log, with versions, branches, merge and shape diff on top.
+
+Open source (LGPL-2.1-or-later). Opens FreeCAD files and keeps FreeCAD's
+Python API. Linux, Windows and macOS, and browser and mobile through sharing.
+
+Thundereal is a fork of [FreeCAD](https://www.freecad.org), grown out of the
+Link branch where `App::Link` and the first topological naming fix started.
+It is an independent project: please report its bugs
+[here](https://github.com/Thundereal/ThunderealCAD/issues), not upstream.
